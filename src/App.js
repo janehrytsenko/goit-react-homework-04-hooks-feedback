@@ -3,6 +3,7 @@ import FeedbackOptions from './components/FeedbackOptions';
 import Section from './components/Section';
 import Notification from './components/Notification';
 import Statistics from './components/Statistics'
+import s from './App.module.css'
 
 function App() {
   const [good, setGood] = useState(0);
@@ -34,7 +35,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className={s.container}>
       <Section title="Please leave feedback">
         <FeedbackOptions
           options={['good', 'neutral', 'bad']}
